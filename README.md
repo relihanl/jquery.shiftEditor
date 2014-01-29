@@ -1,7 +1,7 @@
 # Simple Shift Editor
 
 
-Written by Liam Relihan (resourcekraft.com)
+Written by Liam Relihan (resourcekraft.com).
 Source code is hosted at: https://github.com/relihanl/jquery.shiftEditor
 
 ## Introduction
@@ -33,8 +33,27 @@ Then call 'shiftEditor' method on the text field when document loads.
 </script>
 ```
 ## Moving Data In and Out
-...more details here...
+Data is passed to and from the plugin in the form of a "shift spec". A shift spec consists of a string of characters
+where each character is used to 
+represent a single hour in a week (Monday-Sunday, plus public holidays). The following are the only valid
+characters:
 
-string format
-ajax,
-etc
+| character     | meaning                  |
+| ------------- | ------------------------ |
+| 9             | is on duty ("red")       |
+| 0             | is not on duty ("gray")  |
+
+For instance, a shift string beginning
+'0099000...' would indicate a shift beginning at 0100 on Monday.
+
+To prepopulate the shift editor just supply a correctly formatted shift string into the 'value' attribute of 
+the input field. Similarily, reading the value attribute of the input field will supply the shift spec to a form 
+or javascript in the usual manner.
+
+## To Do
+
+* allow public holidays to be turned off individually
+* quick links allowing the editor to be populated quickly with, for instance "9-5 Monday to Friday"
+* 'invert' button to invert the shift such that working hours become non-working hours and vice-versa
+* quick paint feature that allows the user to quickly color in the cells by holding down the mouse button (or similar)
+
