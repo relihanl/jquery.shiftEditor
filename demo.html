@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Simple Shift Editor</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="jquery.shiftEditor.js"/></script>
+
+<script type="text/javascript">
+  $(function() {    
+   $('#shift1').shiftEditor();
+   $('#shift2').shiftEditor();
+   $('#shift3').shiftEditor(); 
+  });
+</script>
+
+<style type="text/css">
+
+/* General styles */
+body { margin: 0; padding: 0; font: 80%/1.5 Arial,Helvetica,sans-serif; color: #111; background-color: #FFF; }
+h2 { margin: 0px; padding: 10px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 200%; font-weight: normal; color: #FFF; background-color: #CCC; border-bottom: #BBB 2px solid; }
+h3 { margin: 0px; padding: 10px; font-family: Georgia, "Times New Roman", Times, serif; font-size: 150%; font-weight: normal; color: #FFF; background-color: #CCC; border-bottom: #BBB 2px solid; }
+p#copyright { margin: 20px 10px; font-size: 90%; color: #999; }
+
+/* Form styles */
+div.form-container { margin: 10px; padding: 5px; background-color: #FFF; }
+
+p.legend { margin-bottom: 1em; }
+p.legend em { color: #C00; font-style: normal; }
+div.form-container div.controlset {display: block; float:left; width: 100%; padding: 0.25em 0;}
+
+div.form-container div.controlset label,
+div.form-container div.controlset input,
+div.form-container div.controlset div { display: inline; float: left; }
+
+div.form-container div.controlset label { width: 200px;}
+
+</style>
+<link rel="stylesheet" href="shiftEditor.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<h2>Work Shift Picker JQuery Plugin</h2>
+	<h3>by Liam Relihan (www.resourcekraft.com)</h3>
+
+
+		<div class="form-container">
+			<form action="#" method="post">
+				<fieldset>
+					<div class="controlset"><label for="shift1">Shift 1</label> <input id="shift1" type="text" name="shift1" value="99" /></div><br/><br/>
+					<div class="controlset"><label for="shift2">Shift 2</label> <input id="shift2" type="text" name="shift2" value="9090909090" /></div><br/><br/>
+					<div class="controlset"><label for="shift3">Shift 3</label> <input id="shift3" type="text" name="shift3" value="" /></div>
+				</fieldset>
+			</form>
+		</div>
+
+</body>
+
+</html>
+

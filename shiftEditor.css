@@ -1,0 +1,113 @@
+div.picker {
+  height: 40px;
+  width: 96px;
+  padding: 0 !important;
+  cursor: pointer;
+  line-height: 0;
+}
+
+div.picker-day-row {
+  display:inline-block;
+  margin: 0px;
+  height: 5px;
+  line-height: 0;
+  padding: 0px;
+}
+
+span.picker-cell-on {
+  height: 4px;
+  width: 4px;
+  border: 0px solid #000;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0px;
+  background-color: red;
+}
+
+span.picker-cell-off {
+  height: 4px;
+  width: 4px;
+  border: 0px solid #000;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0px;
+  background-color: lightgray;
+}
+
+div#time-selector {
+  width: 430px;
+  position: absolute;
+  border: 1px solid #598FEF;
+  background-color: #EFEFEF;
+  padding: 2px;
+}
+
+div#selector-grid {
+  padding: 0px;
+  line-height: 0;
+}
+  
+div.header-row {
+  display:inline-block;
+  padding: 0px;
+  line-height: 0;
+}
+
+div.day-row {
+  display:inline-block;
+  margin: 0px;
+  height: 12px;
+  line-height: 0;
+  padding: 0px;
+}
+
+span.header-cell {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #000;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 100%;
+  padding: 0px;
+  font-size:10px;
+}
+span.cell-on {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #000;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0px;
+  background-color: red;
+}
+
+span.cell-off {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #000;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0px;
+  background-color: gray;
+}
+
+span.day_label {
+  height: 13px;
+  width: 70px;
+  margin: 0px;
+  float: left;
+  cursor: pointer;
+  line-height: 0;
+  padding: 0px;
+  font-size:10px;
+}
+
