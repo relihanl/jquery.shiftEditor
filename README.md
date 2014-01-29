@@ -44,7 +44,7 @@ characters:
 | 0             | is not on duty ("gray")  |
 
 For instance, a shift string beginning
-'0099000...' would indicate a shift beginning at 0100 on Monday.
+'09999999999999999000...' would indicate a shift beginning at 0100 on Monday.
 
 To prepopulate the shift editor just supply a correctly formatted shift string into the 'value' attribute of 
 the input field. Similarily, reading the value attribute of the input field will supply the shift spec to a form 
